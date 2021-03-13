@@ -14,7 +14,7 @@ var firebaseConfig = {
   
   const db = firebase.firestore();
 
-  function createPost(title, content, time) {
+  function createPost(image, title, content, time) {
     let div = document.createElement("div");
     div.setAttribute("class", "blog-item-card");
   
@@ -27,7 +27,7 @@ var firebaseConfig = {
     let small = document.createElement("p");
     small.setAttribute("class", "blog-date");
   
-    img.src = img;
+    img.src = image;
     h2.textContent = title;
     p.textContent = content;
     small.textContent = time;
