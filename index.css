@@ -411,6 +411,7 @@ label > span {
     }
     /* Blog */
     .blog-item-card {
-        width: 45%;
+        width: 100%;
+        max-width: 100%;
     }
 }
