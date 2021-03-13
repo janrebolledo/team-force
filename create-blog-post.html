@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Force</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="flex row align padding justify">
+        <div class="header-links-container">
+            <a href="" class="header-nav-link">Home</a>
+            <a href="" class="header-nav-link">Store</a>
+            <a href="" class="header-nav-link">Roster</a>
+            <a href="" class="header-nav-link">Blog</a>
+        </div>
+        <div class="header-logo-container"><img src="Assets/Logo.svg" class="header-logo"></div>
+        <div class="flex row align header-social-media-container">
+            <a href=""><img class="social-media-icon" src="Assets/Social Media Icons/Instagram.png"></a>
+            <a href=""><img class="social-media-icon" src="Assets/Social Media Icons/Twitter.png"></a>
+            <a href=""><img class="social-media-icon" src="Assets/Social Media Icons/YouTube.png"></a>
+        </div>
+    </header>
+
+    <!-- Header -->
+
+    <div class="flex justify padding">
+        <div class="form-create-container">
+            <div class="">
+                <h2>Create Post</h2>
+                <div class="form-group flex column justify">
+                    <label for="Author">Author</label>
+                    <input type="text" class="form-control" placeholder="Author" id="author" />
+                </div>
+                <div class="form-group flex column justify">
+                    <label for="Post Title">Post Title</label>
+                    <input type="text" class="form-control" placeholder="Post Title" id="postTitle" />
+                </div>
+                <div class="form-group flex column justify">
+                    <label for="Post Content">Post Content</label>
+                    <textarea id="postContent" cols="30" rows="10" class="form-control" id="postContent"></textarea>
+                </div>
+                <div class="form-group flex column justify">
+                    <label for="Date">Date</label>
+                    <input type="date" class="form-control" id="postDate" />
+                </div>
+                <div class="form-group flex column justify">
+                    <label for="postImage">Image</label>
+                    <input type="file" class="form-control" placeholder="Image" id="postImage" />
+                </div>
+                <input type="submit" value="Post" class="btn btn-primary" id="submitBtn" onclick="uploadImage()"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="flex column justify align">
+        <div class="flex row justify footer-container">
+            <div>
+                <img class="footer-logo" src="Assets/Logo.svg">
+            </div>
+            <div class="flex column footer-link-container">
+                <p class="footer-nav-head">Navigation</p>
+                <a href="" class="footer-link">Home</a>
+                <a href="" class="footer-link">Store</a>
+                <a href="" class="footer-link">Roster</a>
+                <a href="" class="footer-link">Blog</a>
+            </div>
+            <div class="flex column footer-link-container">
+                <p class="footer-nav-head">Stay Connected</p>
+                <a href="" class="footer-link">Instagram</a>
+                <a href="" class="footer-link">Twitter</a>
+                <a href="" class="footer-link">YouTube</a>
+            </div>
+        </div>
+        <p class="footer-cr">Team Force LLC © 2021</p>
+    </footer>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
+
+    <script src="app.js"></script>
+    <script src="create.js"></script>
+
+    <!-- React -->
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+</body>
+
+</html>

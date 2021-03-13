@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Force</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<div class="loader-wrapper">
+    <img src="loader.gif" alt="" class="loader-image">
+  </div>
+
+<body>
+
+    <header class="flex row align padding justify">
+        <div class="header-links-container">
+            <a href="" class="header-nav-link">Home</a>
+            <a href="" class="header-nav-link">Store</a>
+            <a href="" class="header-nav-link">Roster</a>
+            <a href="" class="header-nav-link">Blog</a>
+        </div>
+        <div class="header-logo-container"><img src="Assets/Logo.svg" class="header-logo"></div>
+        <div class="flex row align header-social-media-container">
+            <a href=""><img class="social-media-icon" src="Assets/Social Media Icons/Instagram.png"></a>
+            <a href=""><img class="social-media-icon" src="Assets/Social Media Icons/Twitter.png"></a>
+            <a href=""><img class="social-media-icon" src="Assets/Social Media Icons/YouTube.png"></a>
+        </div>
+    </header>
+
+    <!-- Header -->
+
+    <section class="flex align justify row padding">
+        <div class="flex column dual">
+            <h1>Team Force –</h1>
+            <p>Professional Esports & Entertainment Organization</p>
+        </div>
+        <div class="dual flex align justify">
+            <div class="landing-image-container flex justify">
+                <img class="landing-image" src="Assets/Logo.svg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Store -->
+
+    <section class="flex align justify column padding">
+        <div class="flex row align store-heading">
+            <h1>Store</h1>
+            <a href="https://soardogg.com/marketplace/pro-shops/team-and-communities/forcesgg/"
+                class="powered-by-store">
+                <p>– Powered by Soardogg</p>
+            </a>
+        </div>
+        <div class="store-items-container">
+            <a class="store-item-card-link"
+                href="https://soardogg.com/shop/pro-shops/team-and-communities/forcesgg/team-force-pro-v-neck-jersey/">
+                <div class="store-item-card">
+                    <img class="store-item-image" src="Assets/Merchandise/MensVNeckJersey-TeamForce-Front.jpg" alt="">
+                    <p class="store-item-name">Pro V-Neck Jersey</p>
+                    <p class="store-item-price">$55.00</p>
+                </div>
+            </a>
+            <a class="store-item-card-link"
+                href="https://soardogg.com/shop/pro-shops/team-and-communities/forcesgg/team-force-pro-hoodie/">
+                <div class="store-item-card">
+                    <img class="store-item-image" src="Assets/Merchandise/ProHoodie-TeamForce-Front-510x510.jpg" alt="">
+                    <p class="store-item-name">Pro Hoodie</p>
+                    <p class="store-item-price">$65.00</p>
+                </div>
+            </a>
+            <a class="store-item-card-link"
+                href="https://soardogg.com/shop/pro-shops/team-and-communities/forcesgg/team-force-pro-unisex-joggers/">
+                <div class="store-item-card">
+                    <img class="store-item-image" src="Assets/Merchandise/ProJoggers-TeamForce-Front-510x510.jpg"
+                        alt="">
+                    <p class="store-item-name">Pro Unisex Joggers</p>
+                    <p class="store-item-price">$60.00</p>
+                </div>
+            </a>
+            <a class="store-item-card-link"
+                href="https://soardogg.com/shop/pro-shops/team-and-communities/forcesgg/team-force-face-mask/">
+                <div class="store-item-card">
+                    <img class="store-item-image" src="Assets/Merchandise/FACEMASK-TeamForce-Mockup-510x510.png" alt="">
+                    <p class="store-item-name">Face Mask</p>
+                    <p class="store-item-price">$15.00</p>
+                </div>
+            </a>
+        </div>
+        <div class="flex align justify">
+            <a class="button" href="">See More</a>
+        </div>
+    </section>
+
+    <!-- Blog -->
+
+    <div class="flex justify padding">
+        <div class="row flex blog-items-container" id="posts-collection"></div>
+      </div>
+
+    <!-- Footer -->
+
+    <footer class="flex column justify align">
+        <div class="flex row justify footer-container">
+            <div>
+                <img class="footer-logo" src="Assets/Logo.svg">
+            </div>
+            <div class="flex column footer-link-container">
+                <p class="footer-nav-head">Navigation</p>
+                <a href="" class="footer-link">Home</a>
+                <a href="" class="footer-link">Store</a>
+                <a href="" class="footer-link">Roster</a>
+                <a href="" class="footer-link">Blog</a>
+            </div>
+            <div class="flex column footer-link-container">
+                <p class="footer-nav-head">Stay Connected</p>
+                <a href="" class="footer-link">Instagram</a>
+                <a href="" class="footer-link">Twitter</a>
+                <a href="" class="footer-link">YouTube</a>
+            </div>
+        </div>
+        <p class="footer-cr">Team Force LLC © 2021</p>
+    </footer>
+
+    <!-- jQuery -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").delay(1000).fadeOut("slow");
+        });
+    </script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
