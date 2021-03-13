@@ -328,9 +328,23 @@ footer {
     margin: 5px 0;
 }
 
+label > span {
+    color: gray;
+    font-size: 12px;
+}
+
 .form-group > input, textarea {
     padding: 15px;
     border: solid 1px rgb(209, 209, 209);
+    border-radius: 5px;
+    resize: none;
+    font-size: 18px;
+}
+
+.create-button  {
+    padding: 14px 18px;
+    border: solid 1px rgb(209, 209, 209);
+    background-color: transparent;
     border-radius: 5px;
     resize: none;
     font-size: 18px;
@@ -393,6 +407,10 @@ footer {
     }
     /* Store */
     .store-item-card-link {
+        width: 45%;
+    }
+    /* Blog */
+    .blog-item-card {
         width: 45%;
     }
 }
