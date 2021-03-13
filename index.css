@@ -410,6 +410,9 @@ label > span {
         width: 45%;
     }
     /* Blog */
+    .blog-items-container {
+        align-items: center;
+    }
     .blog-item-card {
         width: 100%;
         max-width: 100%;
