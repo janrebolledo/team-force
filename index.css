@@ -362,7 +362,7 @@ label > span {
         overflow-x: hidden;
     }
     .padding {
-        padding: 0 15%;
+        padding: 0 10%;
     }
     .dual {
         width: 100%;
@@ -412,7 +412,7 @@ label > span {
     }
     /* Store */
     .store-item-card-link {
-        width: 45%;
+        width: 50%;
     }
     /* Blog */
     .blog-items-container {
