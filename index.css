@@ -274,8 +274,7 @@ footer {
 }
 
 .blog-item-card {
-    width: 23%;
-    max-width: 23%;
+    width: auto;
     word-wrap: normal;
     display: flex;
     align-items: flex-start;
