@@ -29,7 +29,6 @@ document.querySelector("#submitBtn").addEventListener("click", function() {
       postDate === "" ||
       postImage === ""
     ) {
-      alert("Fields Empty");
     } else {
       db.collection("posts")
         .doc()
