@@ -426,6 +426,30 @@ label > span {
 
 /* Roster */
 
+.roster-link {
+    width: 60%;
+}
+
+.roster-img {
+    width: 100%;
+}
+
+.roster-wrap {
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.roster-member {
+    margin: 25px 15px;
+}
+
+.roster-social {
+    height: 30px;
+    filter: invert();
+    margin: 0 5px;
+}
+
 /* Roster End */
 
 /* Media Queries */
@@ -508,5 +532,13 @@ label > span {
     .blog-item-card {
         width: auto;
         max-width: auto;
+    }
+    /* Roster */
+    .roster-link {
+        width: auto;
+    }
+    .roster-wrap {
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
 }
